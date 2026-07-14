@@ -9,7 +9,9 @@
 
 :root {
   --orange: #f37d3d;
+  --orange-dark: #e76b2f;
   --yellow: #fffbbe;
+  --yellow-light: #fff3d8;
   --brown: #4f2c1d;
   --brown-light: #462416;
   --brown-dark: #3b1f14;
@@ -23,52 +25,4 @@ body {
 input {
   outline: none;
   border: none;
-}
-
-.items-navbar {
-  transition: color 0.2s ease;
-
-  &:hover {
-    color: var(--orange);
-  }
-
-  &::after {
-    content: '';
-    height: 2px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    transform: translateX(-100%);
-    position: absolute;
-    background: var(--orange);
-    transition: transform 0.2s ease;
-  }
-
-  &:hover::after {
-    transform: translateX(0);
-    transition: transform 0.2s ease;
-  }
-}
-
-.btn-navbar {
-  background-color: var(--brown-light);
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: .4rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
-  box-shadow: inset 0 0 10px 1px var(--brown-dark);
-
-  &:hover {
-    color: var(--orange);
-    background-color: var(--brown-dark);
-  }
-}
-
-.bg-input {
-  background-color: var(--white);
-  box-shadow: inset 0 0 10px 0 var(--brown-dark);
 }
