@@ -1,16 +1,74 @@
+@import "tailwindcss";
+
 @font-face {
-  src: url('src/assets/fonts/poppins-regular.woff2');
-  font-family: 'Poppins';
+  src: url('src/assets/fonts/Epilogue-Light.woff2');
+  font-family: 'Epilogue';
   font-style: normal;
-  font-weight: 400;
   font-display: swap;
 }
 
 :root {
-  --orange: #e57500;
+  --orange: #f37d3d;
+  --yellow: #fffbbe;
   --brown: #4f2c1d;
+  --brown-light: #462416;
+  --brown-dark: #3b1f14;
+  --white: #faf6ec;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Epilogue', sans-serif;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.items-navbar {
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--orange);
+  }
+
+  &::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    position: absolute;
+    background: var(--orange);
+    transition: transform 0.2s ease;
+  }
+
+  &:hover::after {
+    transform: translateX(0);
+    transition: transform 0.2s ease;
+  }
+}
+
+.btn-navbar {
+  background-color: var(--brown-light);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .4rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  box-shadow: inset 0 0 10px 1px var(--brown-dark);
+
+  &:hover {
+    color: var(--orange);
+    background-color: var(--brown-dark);
+  }
+}
+
+.bg-input {
+  background-color: var(--white);
+  box-shadow: inset 0 0 10px 0 var(--brown-dark);
 }

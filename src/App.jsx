@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import './App.css'
 
+import Navbar from './components/Navbar.jsx'
+
 function App() {
 
   return (
     <>
-      <div className='bg-dark'>
-        <h1>Hola</h1>
-      </div>
+      <header>
+        <Navbar />
+      </header>
     </>
   )
 }
