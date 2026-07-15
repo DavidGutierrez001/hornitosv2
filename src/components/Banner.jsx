@@ -51,9 +51,9 @@ function Banner() {
             >
                 <CarouselContent>
                     {banners.map((banner, index) => (
-                        <CarouselItem key={index} className="bg-(--orange) h-[calc(100svh-68px-100px)] flex items-center justify-center px-10">
+                        <CarouselItem key={index} className="bg-(--orange) h-50 lg:h-[calc(100svh-68px-180px)] flex items-center justify-center lg:px-10">
                             <img
-                                className="object-contain object-center w-full cursor-pointer rounded-[5rem]"
+                                className="h-40 md:h-fit object-cover object-right w-full cursor-pointer lg:rounded-[5rem]"
                                 src={banner.src}
                                 alt={banner.alt}
                                 fetchPriority="high"
