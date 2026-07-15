@@ -6,19 +6,20 @@ import Menu01Icon from '@iconify-react/hugeicons/menu-01';
 
 function Navbar() {
     return (
-        <nav className="flex h-23 w-full navbar-bg justify-center bg-(--brown) px-3">
+        <nav className="flex h-25 w-full navbar-bg justify-center bg-(--brown) px-3">
             <div className='flex items-center w-full max-w-7xl gap-3'>
                 <section className='flex flex-1 md:flex-2 items-center gap-3'>
                     <button className='visible md:hidden! p-2 text-white btn-navbar'>
                         <Menu01Icon height="2.4em" />
                     </button>
-                    <a href="">
-                        <img className="h-15 md:h-18 object-cover w-auto" src={logo} alt="logo" />
+                    <a href="/">
+                        <img className="h-15 md:h-15 object-cover w-auto" src={logo} alt="logo" />
                     </a>
-                    <ul className='flex-1 text-white hidden md:flex tracking-wide justify-center items-center gap-5 md:gap-10'>
-                        <li className='relative overflow-hidden'><a className='items-navbar' href="">Ir al Menú</a></li>
-                        <li className='relative overflow-hidden'><a className='items-navbar' href="">Panaderías</a></li>
-                        <li className='relative overflow-hidden'><a className='items-navbar' href="">Contáctanos</a></li>
+                    <ul className='flex-1 text-white hidden uppercase text-xs md:flex justify-between tracking-wide md:justify-center md:gap-5 lg:gap-10 items-center'>
+                        <li className='relative overflow-hidden py-2'><a className='items-navbar' href="">Ir al Menú</a></li>
+                        <li className='relative overflow-hidden py-2'><a className='items-navbar' href="">Panaderías</a></li>
+                        <li className='relative overflow-hidden py-2'><a className='items-navbar' href="">Visítanos</a></li>
+                        <li className='relative overflow-hidden py-2'><a className='items-navbar' href="">Contáctanos</a></li>
                     </ul>
                 </section>
 
@@ -26,12 +27,12 @@ function Navbar() {
                     <div className='md:flex flex-2 w-full max-w-100 relative hidden'>
                         <Search01Icon
                             height="1.5em"
-                            className='absolute top-1/2 left-5 -translate-y-1/2 text-black/80'
+                            className='absolute top-1/2 left-5 -translate-y-1/2 text-white/50'
                         />
                         <input
                             type="text"
-                            placeholder='Tengo antojos de...'
-                            className='flex w-full ps-15 h-11 max-w-90 rounded-full bg-input placeholder:text-[.9rem]'
+                            placeholder='Buscar'
+                            className='flex w-full text-white text-xs ps-14 h-11 max-w-100 rounded-full bg-(--brown-light) uppercase placeholder:text-xs placeholder:text-white/50'
                         />
                     </div>
                     <ul className='flex flex-1 text-white w-full justify-end gap-2'>

@@ -30,10 +30,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: .4rem;
+  border-radius: 100%;
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
-  box-shadow: inset 0 0 10px 1px var(--brown-dark);
 
   &:hover {
     color: var(--orange);
