@@ -6,7 +6,7 @@ import Menu01Icon from '@iconify-react/hugeicons/menu-01';
 
 function Navbar() {
     return (
-        <nav className="flex h-25 w-full navbar-bg justify-center bg-(--brown) px-3">
+        <nav className="flex h-25 w-full navbar-bg justify-center bg-(--brown) px-3 z-100">
             <div className='flex items-center w-full max-w-7xl gap-3'>
                 <section className='flex flex-1 md:flex-2 items-center gap-3'>
                     <button className='visible md:hidden! p-2 text-white btn-navbar'>
@@ -16,7 +16,7 @@ function Navbar() {
                         <img className="h-15 md:h-15 object-cover w-auto" src={logo} alt="logo" />
                     </a>
                     <ul className='flex-1 text-white hidden uppercase text-xs md:flex justify-between tracking-wide md:justify-center md:gap-5 lg:gap-10 items-center'>
-                        <li className='relative overflow-hidden py-2'><a className='items-navbar' href="">Ir al Menú</a></li>
+                        <li className='relative overflow-hidden py-2'><a className='items-navbar' href="#menu">Ir al Menú</a></li>
                         <li className='relative overflow-hidden py-2'><a className='items-navbar' href="">Panaderías</a></li>
                         <li className='relative overflow-hidden py-2'><a className='items-navbar' href="">Visítanos</a></li>
                         <li className='relative overflow-hidden py-2'><a className='items-navbar' href="">Contáctanos</a></li>

@@ -6,10 +6,18 @@
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
-  src: url('src/assets/fonts/AlanSans-Regular.woff2');
+  src: url('src/assets/fonts/AlanSans-Regular.woff2') format("woff2");
   font-family: 'Alan Sans';
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  src: url("./assets/fonts/Cinzel-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
 }
 
 :root {
@@ -55,6 +63,10 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Alan Sans', sans-serif;
 }
@@ -62,6 +74,10 @@ body {
 input {
   outline: none;
   border: none;
+}
+
+.font-cinzel {
+  font-family: "Cinzel", sans-serif;
 }
 
 @theme inline {

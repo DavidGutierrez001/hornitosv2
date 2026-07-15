@@ -12,29 +12,33 @@ function Banner() {
 
     const banners = [
         {
-            src: "src/assets/madre.webp",
+            src: "src/assets/combos.webp",
             alt: "Banner 1"
         },
         {
-            src: "src/assets/panadero.webp",
+            src: "src/assets/madre.webp",
             alt: "Banner 2"
         },
         {
-            src: "src/assets/tarta.webp",
+            src: "src/assets/panadero.webp",
             alt: "Banner 3"
         },
         {
-            src: "src/assets/tiramisu.webp",
+            src: "src/assets/tarta.webp",
             alt: "Banner 4"
         },
         {
-            src: "src/assets/crujiente.webp",
+            src: "src/assets/tiramisu.webp",
             alt: "Banner 5"
+        },
+        {
+            src: "src/assets/crujiente.webp",
+            alt: "Banner 6"
         }
     ]
 
     return (
-        <div className="w-full h-80 md:h-96 lg:h-128 relative">
+        <div className="w-full relative">
             <Carousel
                 plugins={[
                     Autoplay({
@@ -46,7 +50,7 @@ function Banner() {
                     {banners.map((banner, index) => (
                         <CarouselItem key={index}>
                             <img
-                                className="object-cover object-top w-full cursor-pointer"
+                                className="object-cover  object-top w-full cursor-pointer"
                                 src={banner.src}
                                 alt={banner.alt}
                                 fetchPriority="high"

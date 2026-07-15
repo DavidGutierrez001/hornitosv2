@@ -3,7 +3,7 @@ import StoreLocation01Icon from '@iconify-react/hugeicons/store-location-01';
 
 function SubNavbar() {
     return (
-        <nav className="flex h-17 w-full justify-center bg-(--yellow-light) text-[0.8rem] font-semibold px-3 shadow-xl/10 relative z-50">
+        <nav className="flex h-17 w-full justify-center bg-(--yellow-light) text-[0.8rem] font-semibold px-3 shadow-xl/10 z-50 sticky top-0">
             <div className="flex w-full max-w-7xl">
                 <ul className='flex items-center gap-0 md:gap-3 uppercase'>
                     <li><a className='hover:text-(--orange) text-center hidden md:flex! text-xs' href="">Iniciar orden</a></li>
