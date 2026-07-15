@@ -3,7 +3,7 @@ import './App.css'
 
 import Navbar from './components/Navbar.jsx'
 import SubNavbar from './components/SubNavbar.jsx'
-
+import Banner from './components/Banner.jsx'
 function App() {
 
   return (
@@ -12,6 +12,9 @@ function App() {
         <Navbar />
         <SubNavbar />
       </header>
+      <main>
+        <Banner />
+      </main>
     </>
   )
 }
