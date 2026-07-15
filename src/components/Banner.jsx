@@ -40,6 +40,9 @@ function Banner() {
     return (
         <div className="w-full relative">
             <Carousel
+                opts={{
+                    loop: true,
+                }}
                 plugins={[
                     Autoplay({
                         delay: 5000,
@@ -48,9 +51,9 @@ function Banner() {
             >
                 <CarouselContent>
                     {banners.map((banner, index) => (
-                        <CarouselItem key={index}>
+                        <CarouselItem key={index} className="bg-(--orange) h-[calc(100svh-68px-100px)] flex items-center justify-center px-10">
                             <img
-                                className="object-cover  object-top w-full cursor-pointer"
+                                className="object-contain object-center w-full cursor-pointer rounded-[5rem]"
                                 src={banner.src}
                                 alt={banner.alt}
                                 fetchPriority="high"
