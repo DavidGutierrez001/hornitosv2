@@ -36,9 +36,9 @@ function MenuSection() {
                     {menuItems.map((item, index) => (
                         <div>
                             <div key={index} className="w-full cursor-pointer overflow-hidden">
-                                <img className="w-fit h-fit object-cover rounded hover:scale-105 transition-transform duration-300" src={item.url} alt={item.name} />
+                                <img className="w-fit h-50 sm:h-fit object-cover rounded hover:scale-105 transition-transform duration-300" src={item.url} alt={item.name} />
                             </div>
-                            <footer className="bg-(--brown) h-15 flex items-center justify-center rounded-b text-white font-semibold tracking-wider uppercase">
+                            <footer className="bg-(--brown) h-10 sm:h-15 flex items-center justify-center rounded-b text-white font-semibold tracking-wider uppercase">
                                 <span className="text-xs md:text-lg text-center">{item.name}</span>
                             </footer>
                         </div>
