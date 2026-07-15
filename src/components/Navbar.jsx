@@ -8,34 +8,34 @@ function Navbar() {
     return (
         <nav className="flex h-25 w-full navbar-bg justify-center bg-(--brown) px-3 z-100">
             <div className='flex items-center w-full max-w-7xl gap-3'>
-                <section className='flex flex-1 md:flex-2 items-center gap-3'>
-                    <button className='visible md:hidden! p-2 text-white btn-navbar'>
-                        <Menu01Icon height="2.4em" />
+                <section className='flex flex-1 md:flex-3 xl:flex-2 items-center justify-between gap-5'>
+                    <button className='visible lg:hidden! rounded-md! p-2 text-white btn-navbar'>
+                        <Menu01Icon height="2.3em" />
                     </button>
-                    <a href="/">
-                        <img className="h-15 md:h-15 object-cover w-auto" src={logo} alt="logo" />
+                    <a href="/" className='md:me-10 m-0'>
+                        <img className="min-w-25 h-15" src={logo} alt="logo" />
                     </a>
-                    <ul className='flex-1 text-white hidden uppercase text-xs md:flex justify-between tracking-wide md:justify-center md:gap-5 lg:gap-10 items-center'>
-                        <li className='relative overflow-hidden py-2'><a className='items-navbar' href="#menu">Ir al Menú</a></li>
-                        <li className='relative overflow-hidden py-2'><a className='items-navbar' href="">Panaderías</a></li>
-                        <li className='relative overflow-hidden py-2'><a className='items-navbar' href="">Visítanos</a></li>
-                        <li className='relative overflow-hidden py-2'><a className='items-navbar' href="">Contáctanos</a></li>
+                    <ul className='flex-1 text-white hidden uppercase md:text-xs lg:text-sm lg:flex justify-between  md:justify-center md:gap-5 lg:gap-10 items-center'>
+                        <li className='relative overflow-hidden py-1'><a className='items-navbar' href="#menu">Menú</a></li>
+                        <li className='relative overflow-hidden py-1'><a className='items-navbar' href="">Panaderías</a></li>
+                        <li className='relative overflow-hidden py-1'><a className='items-navbar' href="">Visítanos</a></li>
+                        <li className='relative overflow-hidden py-1'><a className='items-navbar' href="">Contáctanos</a></li>
                     </ul>
                 </section>
 
-                <section className='flex-1 flex items-center justify-end gap-2'>
-                    <div className='md:flex flex-2 w-full max-w-100 relative hidden'>
+                <section className='flex-2 flex items-center justify-end gap-2'>
+                    <div className='md:flex w-full lg:max-w-70 xl:max-w-100 relative hidden focus-within:outline-3 focus-within:outline-(--orange-dark) focus-within:outline-solid rounded-full focus-within:text-(--orange-dark) transition-all duration-200'>
                         <Search01Icon
-                            height="1.5em"
-                            className='absolute top-1/2 left-5 -translate-y-1/2 text-white/50'
+                            height="1.4em"
+                            className='absolute top-1/2 left-5 -translate-y-1/2 pointer-events-none'
                         />
                         <input
                             type="text"
                             placeholder='Buscar'
-                            className='flex w-full text-white text-xs ps-14 h-11 max-w-100 rounded-full bg-(--brown-light) uppercase placeholder:text-xs placeholder:text-white/50'
+                            className='flex w-full text-(--brown) text-xs ps-14 h-10 max-w-100 rounded-full bg-(--yellow-light) uppercase placeholder:text-xs placeholder:text-(--brown)/80'
                         />
                     </div>
-                    <ul className='flex flex-1 text-white w-full justify-end gap-2'>
+                    <ul className='flex text-white justify-end gap-1'>
                         <button className='btn-navbar visible md:hidden!'>
                             <Search01Icon
                                 height="1.6em"
