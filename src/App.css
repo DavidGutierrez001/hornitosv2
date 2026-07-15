@@ -53,3 +53,7 @@
     background-color: var(--orange-dark);
   }
 }
+
+.bg-menu {
+  background-image: url("/src/assets/menu-bg.svg");
+}

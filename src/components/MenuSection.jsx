@@ -27,20 +27,20 @@ function MenuSection() {
         { name: "Repostería", url: milhoja },
         { name: "La alacena", url: granola },
     ]
-    
+
     return (
-        <section id="menu" className="flex flex-col items-center px-3 py-10">
+        <section id="menu" className="flex flex-col items-center px-3 py-10 bg-menu">
             <div className="max-w-7xl">
-                <h1 className="text-[clamp(2rem,4vw,2.5rem)] flex w-full pt-5 pb-10 md:pt-20 md:pb-10 uppercase text-(--orange-dark) font-cinzel tracking-tighter">Nuestro Menú</h1>
-                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full gap-5">
+                <h1 className="text-[clamp(2rem,4vw,2.5rem)] flex items-center justify-center md:justify-start w-full pt-5 pb-10 md:pt-20 md:pb-10 uppercase text-(--orange-dark) font-cinzel tracking-tighter">Nuestro Menú</h1>
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full gap-3 md:gap-5">
                     {menuItems.map((item, index) => (
                         <div>
-                            <div key={index} className="w-full cursor-pointer overflow-hidden">
+                            <button key={index} className="relative w-full cursor-pointer overflow-hidden rounded-sm opacity-90 hover:opacity-100 transition-opacity duration-300">
                                 <img className="w-fit h-50 sm:h-fit object-cover rounded hover:scale-105 transition-transform duration-300" src={item.url} alt={item.name} />
-                            </div>
-                            <footer className="bg-(--brown) h-10 sm:h-15 flex items-center justify-center rounded-b text-white font-semibold tracking-wider uppercase">
-                                <span className="text-xs md:text-lg text-center">{item.name}</span>
-                            </footer>
+                                <footer className="bg-(--brown) h-10 sm:h-15 flex items-center justify-center rounded-b text-white font-semibold tracking-wider uppercase absolute bottom-0 w-full">
+                                    <span className="text-xs md:text-lg text-center">{item.name}</span>
+                                </footer>
+                            </button>
                         </div>
                     ))}
                 </div>
