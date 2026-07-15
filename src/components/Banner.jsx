@@ -1,3 +1,10 @@
+import combos from "../assets/combos.webp";
+import madre from "../assets/madre.webp";
+import panadero from "../assets/panadero.webp";
+import tarta from "../assets/tarta.webp";
+import tiramisu from "../assets/tiramisu.webp";
+import crujiente from "../assets/crujiente.webp";
+
 import {
     Carousel,
     CarouselContent,
@@ -11,30 +18,12 @@ import Autoplay from "embla-carousel-autoplay"
 function Banner() {
 
     const banners = [
-        {
-            src: "src/assets/combos.webp",
-            alt: "Banner 1"
-        },
-        {
-            src: "src/assets/madre.webp",
-            alt: "Banner 2"
-        },
-        {
-            src: "src/assets/panadero.webp",
-            alt: "Banner 3"
-        },
-        {
-            src: "src/assets/tarta.webp",
-            alt: "Banner 4"
-        },
-        {
-            src: "src/assets/tiramisu.webp",
-            alt: "Banner 5"
-        },
-        {
-            src: "src/assets/crujiente.webp",
-            alt: "Banner 6"
-        }
+        { src: combos, alt: "Banner 1" },
+        { src: madre, alt: "Banner 2" },
+        { src: panadero, alt: "Banner 3" },
+        { src: tarta, alt: "Banner 4" },
+        { src: tiramisu, alt: "Banner 5" },
+        { src: crujiente, alt: "Banner 6" }
     ]
 
     return (

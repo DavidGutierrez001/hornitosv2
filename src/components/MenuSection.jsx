@@ -1,55 +1,33 @@
+import lanzamientos from "../assets/menu/lanzamientos.webp"
+import promociones from "../assets/menu/promociones.webp"
+import calentado from "../assets/menu/calentado.webp"
+import chocolate from "../assets/menu/chocolate.webp"
+import bruschetta from "../assets/menu/bruschetta.webp"
+import bunuelo from "../assets/menu/bunuelo.webp"
+import corazoncitos from "../assets/menu/corazoncitos.webp"
+import torta from "../assets/menu/torta.webp"
+import pan from "../assets/menu/pan.webp"
+import pan2 from "../assets/menu/pan2.webp"
+import milhoja from "../assets/menu/milhoja.webp"
+import granola from "../assets/menu/granola.webp"
+
 function MenuSection() {
 
     const menuItems = [
-        {
-            name: 'Lanzamientos',
-            url: 'src/assets/menu/lanzamientos.webp'
-        },
-        {
-            name: 'Promociones',
-            url: 'src/assets/menu/promociones.webp'
-        },
-        {
-            name: 'Desayunos',
-            url: 'src/assets/menu/calentado.webp'
-        },
-        {
-            name: 'Tardes Santafereñas',
-            url: 'src/assets/menu/chocolate.webp'
-        },
-        {
-            name: 'Para seguir el día',
-            url: 'src/assets/menu/bruschetta.webp'
-        },
-        {
-            name: 'Acompañamientos',
-            url: 'src/assets/menu/bunuelo.webp'
-        },
-        {
-            name: 'Antojos',
-            url: 'src/assets/menu/corazoncitos.webp'
-        },
-        {
-            name: 'Tortas y Ponqués',
-            url: 'src/assets/menu/torta.webp'
-        },
-        {
-            name: 'Panes para la mesa',
-            url: 'src/assets/menu/pan.webp'
-        },
-        {
-            name: 'Panes para ensamble',
-            url: 'src/assets/menu/pan2.webp'
-        },
-        {
-            name: 'Repostería',
-            url: 'src/assets/menu/milhoja.webp'
-        },
-        {
-            name: 'La alacena',
-            url: 'src/assets/menu/granola.webp'
-        },
+        { name: "Lanzamientos", url: lanzamientos },
+        { name: "Promociones", url: promociones },
+        { name: "Desayunos", url: calentado },
+        { name: "Tardes Santafereñas", url: chocolate },
+        { name: "Para seguir el día", url: bruschetta },
+        { name: "Acompañamientos", url: bunuelo },
+        { name: "Antojos", url: corazoncitos },
+        { name: "Tortas y Ponqués", url: torta },
+        { name: "Panes para la mesa", url: pan },
+        { name: "Panes para ensamble", url: pan2 },
+        { name: "Repostería", url: milhoja },
+        { name: "La alacena", url: granola },
     ]
+    
     return (
         <section id="menu" className="flex flex-col items-center px-3 py-10">
             <div className="max-w-7xl">
