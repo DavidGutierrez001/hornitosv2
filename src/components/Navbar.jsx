@@ -13,7 +13,7 @@ function Navbar() {
                         <Menu01Icon height="2.4em" />
                     </button>
                     <a href="">
-                        <img className="h-15 md:h-18 object-cover min-w-fit" src={logo} alt="logo" />
+                        <img className="h-15 md:h-18 object-cover w-auto" src={logo} alt="logo" />
                     </a>
                     <ul className='flex-1 text-white hidden md:flex tracking-wide justify-center items-center gap-5 md:gap-10'>
                         <li className='relative overflow-hidden'><a className='items-navbar' href="">Ir al Menú</a></li>
