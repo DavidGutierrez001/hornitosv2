@@ -25,7 +25,7 @@ export default function MenuLayout() {
     ];
 
     return (
-        <div className="flex min-h-screen w-full justify-center">
+        <div className="flex min-h-[calc(100svh-168px)] w-full justify-center">
             <div className="grid md:grid-cols-3 lg:grid-cols-4 max-w-7xl w-full ">
                 <aside className="md:sticky md:top-42 self-start flex flex-col md:col-span-1 lg:col-span-1 p-5 gap-5 md:border-r">
                     <h2 className="text-5xl font-bold uppercase font-cinzel text-(--brown-dark) text-center border-b py-7">MENÚ</h2>

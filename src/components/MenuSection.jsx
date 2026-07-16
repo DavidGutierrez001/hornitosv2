@@ -42,7 +42,11 @@ function MenuSection() {
                                 key={index}
                                 className="relative w-full cursor-pointer rounded-sm opacity-90 hover:opacity-100 transition-opacity duration-300"
                                 onClick={() => {
-                                    window.scrollTo(0, 0);
+                                    setTimeout(() => {
+                                        window.scrollTo({
+                                            top: 0,
+                                        });
+                                    }, 5);
                                 }}
                             >
 
