@@ -18,8 +18,8 @@ import Autoplay from "embla-carousel-autoplay"
 function Banner() {
 
     const banners = [
-        { src: combos, alt: "Banner 1" },
-        { src: madre, alt: "Banner 2" },
+        { src: madre, alt: "Banner 1" },
+        { src: combos, alt: "Banner 2" },
         { src: panadero, alt: "Banner 3" },
         { src: tarta, alt: "Banner 4" },
         { src: tiramisu, alt: "Banner 5" },
@@ -27,7 +27,7 @@ function Banner() {
     ]
 
     return (
-        <div className="w-full relative">
+        <div className="w-full relative bg-banner">
             <Carousel
                 opts={{
                     loop: true,
@@ -38,11 +38,11 @@ function Banner() {
                     }),
                 ]}
             >
-                <CarouselContent>
+                <CarouselContent className="relative w-[calc(100vw+3rem)]">
                     {banners.map((banner, index) => (
-                        <CarouselItem key={index} className="bg-(--orange) h-50 lg:h-[calc(100svh-68px-180px)] flex items-center justify-center lg:px-10">
+                        <CarouselItem key={index} className="h-60 lg:h-[calc(100svh-68px-250px)] flex items-center justify-center lg:px-15">
                             <img
-                                className="h-40 md:h-fit object-cover object-right w-full cursor-pointer lg:rounded-[5rem]"
+                                className="md:h-fit object-cover w-full max-w-11/12 cursor-pointer lg:rounded-[5rem] shadow"
                                 src={banner.src}
                                 alt={banner.alt}
                                 fetchPriority="high"
@@ -50,6 +50,8 @@ function Banner() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
+                <CarouselPrevious className="absolute left-5 top-43 md:top-0 h-10 w-10 md:h-15 md:w-15 bg-(--white) cursor-pointer shadow-xl hover:bg-white border-0" />
+                <CarouselNext className="absolute right-5 top-43 md:top-0 h-10 w-10 md:h-15 md:w-15 bg-(--white) cursor-pointer shadow-xl hover:bg-white border-0" />
             </Carousel>
         </div>
     )
