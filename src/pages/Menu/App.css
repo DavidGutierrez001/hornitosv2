@@ -1,0 +1,18 @@
+.btn-category {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    padding-inline: 1rem;
+    color: var(--brown-dark);
+    border-radius: .3rem;
+
+    &:hover:not(.selected-category) {
+        background-color: var(--accent);
+    }
+}
+
+.selected-category {
+    background-color: var(--brown);
+    color: #fff;
+    pointer-events: none;
+}

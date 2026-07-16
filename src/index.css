@@ -6,15 +6,15 @@
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
-  src: url('src/assets/fonts/AlanSans-Regular.woff2') format("woff2");
-  font-family: 'Alan Sans';
+  src: url('src/assets/fonts/Inter-Medium.woff2') format("woff2");
+  font-family: 'Inter Variable';
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Cinzel";
-  src: url("./assets/fonts/Cinzel-Bold.woff2") format("woff2");
+  font-family: "Friz Quadrata";
+  src: url("./assets/fonts/FrizQuadrata-Bold.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
   font-weight: 800;
@@ -63,12 +63,8 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: 'Alan Sans', sans-serif;
+  font-family: 'Inter Variable', sans-serif;
 }
 
 input {
@@ -77,7 +73,7 @@ input {
 }
 
 .font-cinzel {
-  font-family: "Cinzel", sans-serif;
+  font-family: "Friz Quadrata", sans-serif;
 }
 
 @theme inline {

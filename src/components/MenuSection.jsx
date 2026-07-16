@@ -11,6 +11,8 @@ import pan2 from "../assets/menu/pan2.webp"
 import milhoja from "../assets/menu/milhoja.webp"
 import granola from "../assets/menu/granola.webp"
 
+import { Link } from "react-router-dom"
+
 function MenuSection() {
 
     const menuItems = [
@@ -29,18 +31,28 @@ function MenuSection() {
     ]
 
     return (
-        <section id="menu" className="flex flex-col items-center px-3 py-10 bg-menu">
+        <section id="menu" className="flex flex-col items-center px-3 py-10 ">
             <div className="max-w-7xl">
-                <h1 className="text-[clamp(2rem,4vw,2.5rem)] flex items-center justify-center md:justify-start w-full pt-5 pb-10 md:pt-20 md:pb-10 uppercase text-(--orange-dark) font-cinzel tracking-tighter">Nuestro Menú</h1>
+                <h1 className="text-[clamp(2rem,4vw,3rem)] flex items-center justify-center md:justify-start w-full pt-5 pb-10 md:pt-20 md:pb-10 uppercase text-(--orange-dark) font-cinzel">Nuestro Menú</h1>
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full gap-3 md:gap-5">
                     {menuItems.map((item, index) => (
-                        <div>
-                            <button key={index} className="relative w-full cursor-pointer overflow-hidden rounded-sm opacity-90 hover:opacity-100 transition-opacity duration-300">
-                                <img className="w-fit h-50 sm:h-fit object-cover rounded hover:scale-105 transition-transform duration-300" src={item.url} alt={item.name} />
+                        <div className="overflow-hidden">
+                            <Link
+                                to={'/menu/' + item.name.toLowerCase()}
+                                key={index}
+                                className="relative w-full cursor-pointer rounded-sm opacity-90 hover:opacity-100 transition-opacity duration-300"
+                                onClick={() => {
+                                    window.scrollTo(0, 0);
+                                }}
+                            >
+
+                                <img
+                                    className="w-fit h-50 sm:h-fit object-cover rounded hover:scale-105 transition-transform duration-300" src={item.url} alt={item.name}
+                                />
                                 <footer className="bg-(--brown) h-10 sm:h-15 flex items-center justify-center rounded-b text-white font-semibold tracking-wider uppercase absolute bottom-0 w-full">
                                     <span className="text-xs md:text-lg text-center">{item.name}</span>
                                 </footer>
-                            </button>
+                            </Link>
                         </div>
                     ))}
                 </div>

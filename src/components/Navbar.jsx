@@ -4,6 +4,8 @@ import ShoppingBasket01Icon from '@iconify-react/hugeicons/shopping-basket-01';
 import UserCircleIcon from '@iconify-react/hugeicons/user-circle';
 import Menu01Icon from '@iconify-react/hugeicons/menu-01';
 
+import { Link } from 'react-router-dom'
+
 function Navbar() {
     return (
         <nav className="flex h-25 w-full navbar-bg justify-center bg-(--brown) px-3 z-100">
@@ -12,14 +14,22 @@ function Navbar() {
                     <button className='visible lg:hidden! rounded-md! p-2 text-white btn-navbar'>
                         <Menu01Icon height="2.3em" />
                     </button>
-                    <a href="/" className='md:me-10 m-0'>
+                    <Link to="/" className='md:me-10 m-0'>
                         <img className="min-w-25 h-15" src={logo} alt="logo" />
-                    </a>
-                    <ul className='flex-1 text-white hidden uppercase md:text-xs lg:text-sm lg:flex justify-between  md:justify-center md:gap-5 lg:gap-10 items-center'>
-                        <li className='relative overflow-hidden py-1'><a className='items-navbar' href="#menu">Menú</a></li>
-                        <li className='relative overflow-hidden py-1'><a className='items-navbar' href="">Panaderías</a></li>
-                        <li className='relative overflow-hidden py-1'><a className='items-navbar' href="">Visítanos</a></li>
-                        <li className='relative overflow-hidden py-1'><a className='items-navbar' href="">Contáctanos</a></li>
+                    </Link>
+                    <ul className='flex-1 text-white hidden md:text-xs lg:text-sm lg:flex justify-between md:justify-center md:gap-5 lg:gap-10 items-center'>
+                        <Link className='relative overflow-hidden py-1' to="/menu">
+                            <a className='items-navbar'>Menú</a>
+                        </Link>
+                        <Link className='relative overflow-hidden py-1' to="/panaderias">
+                            <a className='items-navbar'>Panaderías</a>
+                        </Link>
+                        <Link className='relative overflow-hidden py-1' to="/visitanos">
+                            <a className='items-navbar'>Visítanos</a>
+                        </Link>
+                        <Link className='relative overflow-hidden py-1' to="/contactanos">
+                            <a className='items-navbar'>Contáctanos</a>
+                        </Link>
                     </ul>
                 </section>
 
