@@ -13,9 +13,24 @@ import Promociones from "./pages/Menu/Promociones";
 import NotFound from "./pages/Menu/NotFound";
 
 function App() {
+
+  const menuItems = [
+    { name: "Lanzamientos", path: "lanzamientos" },
+    { name: "Promociones", path: "promociones" },
+    { name: "Desayunos", path: "desayunos" },
+    { name: "Tardes Santafereñas", path: "tardes-santafereñas" },
+    { name: "Para seguir el día", path: "para-seguir-el-dia" },
+    { name: "Acompañamientos", path: "acompañamientos" },
+    { name: "Antojos", path: "antojos" },
+    { name: "Tortas y Ponqués", path: "tortas-y-ponqués" },
+    { name: "Panes para la mesa", path: "panes-para-la-mesa" },
+    { name: "Panes para ensamble", path: "panes-para-ensamble" },
+    
+  ];
+
   return (
     <>
-      <header className='sticky top-0 self-start z-100'>
+      <header className='sticky top-0 self-start z-50'>
         <Navbar />
         <SubNavbar />
       </header>
@@ -24,8 +39,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
 
-          <Route path="/menu" element={<MenuLayout />}>
-            <Route index element={<Lanzamientos />} />
+          <Route path="/menu" element={<MenuLayout menuItems={menuItems} />}>
             <Route path="lanzamientos" element={<Lanzamientos />} />
             <Route path="promociones" element={<Promociones />} />
             <Route path="not-found" element={<NotFound />} />

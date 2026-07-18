@@ -22,12 +22,12 @@ function Cookies() {
 
             <div className="fixed bottom-0 w-screen flex bg-white min-h-40 px-5 justify-center border-t shadow-lg z-50">
                 <Alert className="max-w-7xl h-full flex flex-col py-5 border-none px-0 m-0">
-                    <AlertTitle className="text-xl text-center md:text-start">
+                    <AlertTitle className="text-xl text-center mb-1 md:text-start">
                         Consentimiento de Cookies
                     </AlertTitle>
 
                     <div className="flex flex-col md:flex-row gap-5 text-center md:text-start">
-                        <AlertDescription className="text-sm flex-2">
+                        <AlertDescription className="text-sm font-light text-black flex-2">
                             En Hornitos utilizamos cookies propias y de terceros con fines analíticos y a fin de garantizar la funcionalidad de la web, mejorar tu experiencia y mostrar publicidad relacionada con tus preferencias. Puedes "Aceptar" o seleccionar aquellas que quieras en "Configurar cookies". Para conocer más, consulta nuestra Política.
                         </AlertDescription>
 

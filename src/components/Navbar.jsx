@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
     return (
-        <nav className="flex h-25 w-full navbar-bg justify-center bg-(--brown) px-3 z-100">
+        <nav className="flex h-25 w-full navbar-bg justify-center bg-(--brown) px-3 z-80">
             <div className='flex items-center w-full max-w-7xl gap-3'>
                 <section className='flex flex-1 md:flex-3 xl:flex-2 items-center justify-between gap-5'>
                     <button className='visible lg:hidden! rounded-md! p-2 text-white btn-navbar'>
@@ -17,20 +17,18 @@ function Navbar() {
                     <Link to="/" className='md:me-10 m-0'>
                         <img className="min-w-25 h-15" src={logo} alt="logo" />
                     </Link>
-                    <ul className='flex-1 text-white hidden md:text-xs lg:text-sm lg:flex justify-between md:justify-center md:gap-5 lg:gap-10 items-center'>
-                        <Link className='relative overflow-hidden py-1' to="/menu">
-                            <a className='items-navbar'>Menú</a>
+                    <ul className='flex-1 text-white hidden md:text-xs lg:text-[1rem] lg:flex justify-between md:justify-center md:gap-5 lg:gap-10 items-center'>
+                        <Link className='relative overflow-hidden py-1 items-navbar' to="/menu">
+                            Menú
                         </Link>
-                        <Link className='relative overflow-hidden py-1' to="/panaderias">
-                            <a className='items-navbar'>Panaderías</a>
+                        <Link className='relative overflow-hidden py-1 items-navbar' to="/visitanos">
+                            Visítanos
                         </Link>
-                        <Link className='relative overflow-hidden py-1' to="/visitanos">
-                            <a className='items-navbar'>Visítanos</a>
-                        </Link>
-                        <Link className='relative overflow-hidden py-1' to="/contactanos">
-                            <a className='items-navbar'>Contáctanos</a>
+                        <Link className='relative overflow-hidden py-1 items-navbar' to="/contactanos">
+                            Contáctanos
                         </Link>
                     </ul>
+
                 </section>
 
                 <section className='flex-2 flex items-center justify-end gap-2'>
@@ -42,7 +40,7 @@ function Navbar() {
                         <input
                             type="text"
                             placeholder='Buscar'
-                            className='flex w-full text-(--brown) text-xs ps-14 h-10 max-w-100 rounded-full bg-(--yellow-light) uppercase placeholder:text-xs placeholder:text-(--brown)/80'
+                            className='flex w-full text-black text-sm ps-14 h-10 max-w-100 rounded-full bg-white uppercase placeholder:text-xs placeholder:text-black/60'
                         />
                     </div>
                     <ul className='flex text-white justify-end gap-1'>
