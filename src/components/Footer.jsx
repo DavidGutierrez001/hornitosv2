@@ -19,7 +19,7 @@ function Footer() {
                             alt="Logo"
                             className='h-15'
                         />
-                        <p className='max-w-100 text-md text-white/80 leading-none'>
+                        <p className='max-w-100 text-md font-light text-white/80 leading-none'>
                             Contiene sustancias o productos que pueden causar alergias o intolerancias.
                         </p>
 
@@ -38,9 +38,9 @@ function Footer() {
                         </p>
                     </section>
 
-                    <section className="grid grid-cols-3 w-full gap-10 md:gap-20">
+                    <section className="grid grid-cols-3 w-full gap-10 md:gap-20 font-light">
                         <div>
-                            <h2 className="text-md text-white mb-5">Servicios</h2>
+                            <h2 className="text-md text-white mb-5 font-medium">Servicios</h2>
                             <ul className="gap-8 flex flex-col text-md text-white/70 leading-none">
                                 <li><a href="#" className="hover:underline hover:text-white">Nuestra Historia</a></li>
                                 <li><a href="#" className="hover:underline hover:text-white">Contacto</a></li>
@@ -50,7 +50,7 @@ function Footer() {
                         </div>
 
                         <div>
-                            <h2 className="text-md text-white mb-5">Legal</h2>
+                            <h2 className="text-md text-white mb-5 font-medium">Legal</h2>
                             <ul className="gap-8 flex flex-col text-md text-white/70 leading-none">
                                 <li><a href="#" className="hover:underline hover:text-white">Política de Privacidad</a></li>
                                 <li><a href="#" className="hover:underline hover:text-white">Política de Tratamiento de Datos</a></li>
@@ -59,7 +59,7 @@ function Footer() {
                         </div>
 
                         <div>
-                            <h2 className="text-md text-white mb-5">Empresa</h2>
+                            <h2 className="text-md text-white mb-5 font-medium">Empresa</h2>
                             <ul className="gap-8 flex flex-col text-md text-white/70 leading-none">
                                 <li><a href="#" className="hover:underline hover:text-white">Facturación Electrónica</a></li>
                                 <li><a href="#" className="hover:underline hover:text-white">Sistema de Pagos e Impuestos</a></li>
@@ -74,7 +74,7 @@ function Footer() {
                     <img src={crediBanco} alt="Logo CrediBanco" className='h-7 sm:h-10' />
                     <img src={goDaddy} alt="Logo GoDaddy" className='h-5 sm:h-7' />
                 </section>
-                <span className='text-white/40 text-sm'>© {new Date().getFullYear()} Todos los derechos reservados.</span>
+                <span className='text-white/60 text-sm font-light'>© {new Date().getFullYear()} Todos los derechos reservados.</span>
             </footer>
         </>
     )
