@@ -11,7 +11,7 @@ function Footer() {
 
     return (
         <>
-            <footer className="flex flex-col min-h-[50svh] w-full bg-(--brown) pt-10 pb-5 md:pt-20 md:pb-10 px-3 items-center gap-10">
+            <footer className="flex flex-col min-h-[50svh] w-full bg-(--brown) pt-10 pb-5 md:pt-20 md:pb-10 px-3 items-center gap-10 mt-50">
                 <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20">
                     <section className="flex-1 gap-7 md:gap-6 flex flex-col text-white items-start">
                         <img
