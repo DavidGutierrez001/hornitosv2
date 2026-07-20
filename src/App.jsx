@@ -4,7 +4,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 
 import Navbar from './components/Navbar.jsx'
 import SubNavbar from './components/SubNavbar.jsx'
-import Home from './pages/Home.jsx'
+import Home from './pages/Home/index.jsx'
 import Footer from './components/Footer.jsx'
 
 import MenuLayout from './layouts/MenuLayout'

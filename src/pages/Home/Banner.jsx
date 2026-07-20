@@ -1,9 +1,9 @@
-import combos1x from "../assets/banners/combos@1x.webp";
-import combos2x from "../assets/banners/combos@2x.webp";
-import madre1x from "../assets/banners/madre@1x.webp";
-import madre2x from "../assets/banners/madre@2x.webp";
-import tiramisu1x from "../assets/banners/tiramisu@1x.webp";
-import tiramisu2x from "../assets/banners/tiramisu@2x.webp";
+import combos1x from "../../assets/banners/combos@1x.webp";
+import combos2x from "../../assets/banners/combos@2x.webp";
+import madre1x from "../../assets/banners/madre@1x.webp";
+import madre2x from "../../assets/banners/madre@2x.webp";
+import tiramisu1x from "../../assets/banners/tiramisu@1x.webp";
+import tiramisu2x from "../../assets/banners/tiramisu@2x.webp";
 
 import {
     Carousel,
