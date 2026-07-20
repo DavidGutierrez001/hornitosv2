@@ -52,11 +52,12 @@ function MenuSection() {
                                     }, 5);
                                 }}
                             >
-
                                 <img
                                     className="w-fit h-50 sm:h-fit object-contain rounded hover:scale-105 transition-transform duration-300"
                                     src={item.url}
                                     alt={item.name}
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                                 <footer className="bg-(--brown)/90 h-10 sm:h-15 flex items-center justify-center rounded-b text-white font-semibold tracking-wider uppercase absolute bottom-0 w-full">
                                     <span className="text-xs md:text-lg text-center">{item.name}</span>
