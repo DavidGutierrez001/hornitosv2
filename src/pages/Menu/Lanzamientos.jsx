@@ -32,13 +32,13 @@ export default function Lanzamientos() {
         <div className="flex flex-col w-full">
             <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3'>
                 {products.map((product) => (
-                    <div key={product.id} className="flex flex-col rounded-lg shadow p-3 bg-white">
+                    <div key={product.id} className="flex flex-col rounded-lg shadow bg-white">
                         <img src={product.imagen}
                             alt={product.name}
                             className="w-full h-auto rounded"
                         />
-                        <footer className="min-h-35 flex flex-col justify-between">
-                            <h3 className="text-(--brown) font-extrabold text-lg leading-none mt-5">
+                        <footer className="min-h-35 flex flex-col justify-between p-3">
+                            <h3 className="text-(--brown) font-extrabold text-lg leading-none">
                                 {product.name}
                             </h3>
                             <p className="text-black/90 text-sm mt-2">

@@ -33,12 +33,12 @@ function MenuSection() {
     return (
         <section id="menu" className="flex flex-col items-center px-3">
             <div className="max-w-7xl">
-                <h1 className="text-[clamp(2rem,4vw,3.2rem)] border-b-2 flex border-b-(--orange)/50 items-center justify-center md:justify-start w-full py-3 md:mt-20 md:mb-15 uppercase text-(--orange-dark) font-cinzel">
+                <h1 className="text-[clamp(2rem,4vw,3.2rem)] border-b-2 flex border-b-(--orange)/50 items-center justify-center md:justify-start w-full py-3 mt-10 md:mt-20 md:mb-15 uppercase text-(--orange-dark) font-cinzel">
                     Nuestro Menú
                 </h1>
-                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full gap-3 md:gap-3">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full gap-3 md:gap-3 mt-10">
                     {menuItems.map((item, index) => (
-                        <div className="overflow-hidden">
+                        <div className="overflow-hidden" key={index}>
                             <Link
                                 to={'/menu/' + item.name.toLowerCase()}
                                 key={index}
@@ -52,16 +52,19 @@ function MenuSection() {
                                     }, 5);
                                 }}
                             >
-                                <img
-                                    className="w-fit h-50 sm:h-fit object-contain rounded hover:scale-105 transition-transform duration-300"
-                                    src={item.url}
-                                    alt={item.name}
-                                    loading="lazy"
-                                    decoding="async"
-                                />
-                                <footer className="bg-(--brown)/90 h-10 sm:h-15 flex items-center justify-center rounded-b text-white font-semibold tracking-wider uppercase absolute bottom-0 w-full">
-                                    <span className="text-xs md:text-lg text-center">{item.name}</span>
-                                </footer>
+                                <div className="flex flex-col gap-0">
+                                    <img
+                                        className="w-fit h-60 sm:h-fit object-cover rounded hover:scale-105 transition-transform duration-300"
+                                        src={item.url}
+                                        alt={item.name}
+                                        loading="lazy"
+                                        decoding="async"
+                                    >
+                                    </img>
+                                    <span className="bg-(--brown) w-full flex h-12 text-white items-center justify-center z-50">
+                                        {item.name}
+                                    </span>
+                                </div>
                             </Link>
                         </div>
                     ))}
