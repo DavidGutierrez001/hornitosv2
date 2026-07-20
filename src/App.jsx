@@ -13,6 +13,7 @@ import Promociones from "./pages/Menu/Promociones";
 import NotFound from "./pages/Menu/NotFound";
 
 import Cookies from './components/Cookies.jsx'
+import FloatButtons from './components/FloatButtons.jsx'
 
 function App() {
 
@@ -47,6 +48,8 @@ function App() {
             <Route path="*" element={<Navigate to="/menu/not-found" />} />
           </Route>
         </Routes>
+        
+        <FloatButtons />
       </main>
 
       <footer>
