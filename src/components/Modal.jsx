@@ -8,10 +8,10 @@ export default function Modal({ isOpen, onClose, title }) {
     useEffect(() => {
         if (isOpen) {
             setModalVisible(true);
+        } else {
+            setModalVisible(false);
         }
     }, [isOpen]);
-
-    if (!isOpen) return null;
 
     const handleOverlayClick = (e) => {
         if (e.target === e.currentTarget) {

@@ -6,11 +6,13 @@ import Navbar from './components/Navbar.jsx'
 import SubNavbar from './components/SubNavbar.jsx'
 import Home from './pages/Home.jsx'
 import Footer from './components/Footer.jsx'
-import Cookies from './components/Cookies.jsx'
+
 import MenuLayout from './layouts/MenuLayout'
 import Lanzamientos from "./pages/Menu/Lanzamientos";
 import Promociones from "./pages/Menu/Promociones";
 import NotFound from "./pages/Menu/NotFound";
+
+import Cookies from './components/Cookies.jsx'
 
 function App() {
 
@@ -20,12 +22,11 @@ function App() {
     { name: "Desayunos", path: "desayunos" },
     { name: "Tardes Santafereñas", path: "tardes-santafereñas" },
     { name: "Para seguir el día", path: "para-seguir-el-dia" },
-    { name: "Acompañamientos", path: "acompañamientos" },
+    { name: "Acompañamientos", path: "acompanamientos" },
     { name: "Antojos", path: "antojos" },
     { name: "Tortas y Ponqués", path: "tortas-y-ponqués" },
     { name: "Panes para la mesa", path: "panes-para-la-mesa" },
     { name: "Panes para ensamble", path: "panes-para-ensamble" },
-    
   ];
 
   return (
