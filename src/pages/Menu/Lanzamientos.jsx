@@ -1,8 +1,8 @@
 export default function Lanzamientos() {
 
-    const images = import.meta.glob('/src/assets/menu/lanzamientos/*.{png,jpg,jpeg,svg}', {
+    const images = import.meta.glob('../../assets/menu/lanzamientos/*.{png,jpg,jpeg,svg}', {
         eager: true,
-        as: 'url'
+        import: 'default',
     });
 
     const infoProducts = [
