@@ -1,8 +1,6 @@
-
-
 export default function Lanzamientos() {
 
-    const images = import.meta.glob('../../assets/menu/lanzamientos/*.{png,jpg,jpeg,svg}', {
+    const images = import.meta.glob('/src/assets/menu/lanzamientos/*.{png,jpg,jpeg,svg}', {
         eager: true,
         as: 'url'
     });
@@ -32,9 +30,9 @@ export default function Lanzamientos() {
 
     return (
         <div className="flex flex-col w-full">
-            <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+            <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3'>
                 {products.map((product) => (
-                    <div key={product.id} className="flex flex-col rounded-lg border shadow p-3">
+                    <div key={product.id} className="flex flex-col rounded-lg shadow p-3 bg-white">
                         <img src={product.imagen}
                             alt={product.name}
                             className="w-full h-auto rounded"

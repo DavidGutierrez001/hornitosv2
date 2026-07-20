@@ -12,7 +12,6 @@ import milhoja from "../../assets/menu/milhoja.webp"
 import granola from "../../assets/menu/granola.webp"
 
 import { Link } from "react-router-dom"
-import { act } from "react"
 
 function MenuSection() {
 
@@ -34,7 +33,9 @@ function MenuSection() {
     return (
         <section id="menu" className="flex flex-col items-center px-3">
             <div className="max-w-7xl">
-                <h1 className="text-[clamp(2rem,4vw,3rem)] flex items-center justify-center md:justify-start w-full pt-5 pb-10 md:pt-20 md:pb-10 uppercase text-(--orange-dark) font-cinzel">Nuestro Menú</h1>
+                <h1 className="text-[clamp(2rem,4vw,3.2rem)] border-b-2 flex border-b-(--orange)/50 items-center justify-center md:justify-start w-full py-3 md:mt-20 md:mb-15 uppercase text-(--orange-dark) font-cinzel">
+                    Nuestro Menú
+                </h1>
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full gap-3 md:gap-3">
                     {menuItems.map((item, index) => (
                         <div className="overflow-hidden">
