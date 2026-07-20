@@ -13,6 +13,7 @@ import Promociones from "./pages/Menu/Promociones";
 import NotFound from "./pages/Menu/NotFound";
 
 import Visitanos from './pages/Visitanos/App.jsx'
+import Contact from './pages/Contact/App.jsx'
 
 import Cookies from './components/Cookies.jsx'
 import FloatButtons from './components/FloatButtons.jsx'
@@ -44,12 +45,14 @@ function App() {
           <Route path="/" element={<Home />} />
 
           <Route path="/menu" element={<MenuLayout menuItems={menuItems} />}>
+            <Route index element={<Navigate to="/menu/lanzamientos" />} />
             <Route path="lanzamientos" element={<Lanzamientos />} />
             <Route path="promociones" element={<Promociones />} />
             <Route path="not-found" element={<NotFound />} />
             <Route path="*" element={<Navigate to="/menu/not-found" />} />
           </Route>
           <Route path="/visitanos" element={<Visitanos />} />
+          <Route path="/contactanos" element={<Contact />} />
         </Routes>
 
         <FloatButtons />
